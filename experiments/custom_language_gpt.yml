@@ -118,7 +118,7 @@ networks:
       #only_alignment_head: False  # uv3/4
 
 path:
-  pretrain_model_gpt: '../experiments/autoregressive.pth' # CHANGEME: copy this from tortoise cache
+  pretrain_model_gpt: '/models--iqrabatool--Tortoise_german/snapshots/f8f03ef4d1cf6cd25831ac38d6ac5ae6be6c3cd7/checkpoint_12000_final(no-space).pth' # CHANGEME: copy this from tortoise cache
   strict_load: true
   #resume_state: ../experiments/train_imgnet_vqvae_stage1/training_state/0.state   # <-- Set this to resume from a previous training state.
 
@@ -144,7 +144,7 @@ logger:
   visuals: [gen, mel] #TODO: figure this out
   visual_debug_rate: 1000
   is_mel_spectrogram: true
-  disable_state_saving: true # CHANGEME if you plan to halt training inbetween
+  disable_state_saving: false # CHANGEME if you plan to halt training inbetween
 
 upgrades:
   # Variable: number_of_checkpoints_to_save
