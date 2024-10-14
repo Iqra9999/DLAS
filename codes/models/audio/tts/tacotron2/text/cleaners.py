@@ -84,6 +84,5 @@ def english_cleaners(text):
   '''Pipeline for English text, including number and abbreviation expansion.'''
   text=GermanTransliterate(make_lowercase=False).transliterate(text)
   text = re.sub(re.compile(r'\s+'), ' ', text)  # Normalize whitespace
-  text = text.replace('"', '')
   return text
 
