@@ -118,7 +118,7 @@ networks:
       #only_alignment_head: False  # uv3/4
 
 path:
-  pretrain_model_gpt: '/models--iqrabatool--Tortoise_german/snapshots/f8f03ef4d1cf6cd25831ac38d6ac5ae6be6c3cd7/checkpoint_12000_final(no-space).pth' # CHANGEME: copy this from tortoise cache
+  pretrain_model_gpt: '/models--iqrabatool--Tortoise_german/snapshots/0b4a59655cf6a2a28261f8fccb951b83e7f677c9/checkpoint_final_1000.pth' # CHANGEME: copy this from tortoise cache
   strict_load: true
   #resume_state: ../experiments/train_imgnet_vqvae_stage1/training_state/0.state   # <-- Set this to resume from a previous training state.
 
@@ -127,7 +127,7 @@ train: # CHANGEME: ALL OF THESE PARAMETERS SHOULD BE EXPERIMENTED WITH
   niter: 5000
   warmup_iter: -1
   mega_batch_factor: 4    # <-- Gradient accumulation factor. If you are running OOM, increase this to [2,4,8].
-  val_freq: 500 # TODO set this to epoch size * something
+  val_freq: 5000 # TODO set this to epoch size * something
 
   default_lr_scheme: MultiStepLR
   gen_lr_steps: [500, 1000, 1400, 1800] #[50000, 100000, 140000, 180000]
