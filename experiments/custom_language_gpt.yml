@@ -118,7 +118,7 @@ networks:
       #only_alignment_head: False  # uv3/4
 
 path:
-  pretrain_model_gpt: '/models--iqrabatool--Tortoise_german/snapshots/18f1f1df250ba08051d6fac9addd1fb5c356abf2/checkpoint_final_3000.pth' # CHANGEME: copy this from tortoise cache
+  pretrain_model_gpt: '/models--iqrabatool--Tortoise_german/snapshots/04709668d296b3138dba2866bd9823d7fe40e262/checkpoint_final_4000.pth' # CHANGEME: copy this from tortoise cache
   strict_load: true
   #resume_state: ../experiments/train_imgnet_vqvae_stage1/training_state/0.state   # <-- Set this to resume from a previous training state.
 
