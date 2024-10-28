@@ -118,7 +118,7 @@ networks:
       #only_alignment_head: False  # uv3/4
 
 path:
-  pretrain_model_gpt: '/models--iqrabatool--Tortoise_german/snapshots/f6b0240847c762a3a0f3bb8ce04e3bf689a3137f/checkpoint_final_8000.pth' # CHANGEME: copy this from tortoise cache
+  pretrain_model_gpt: '../experiments/autoregressive.pth' # CHANGEME: copy this from tortoise cache
   strict_load: true
   #resume_state: ../experiments/train_imgnet_vqvae_stage1/training_state/0.state   # <-- Set this to resume from a previous training state.
 
@@ -155,7 +155,7 @@ upgrades:
   # For Colab use 1 or 2 for gDrive and 5 for instance drive
   # 1 == Leave last saved checkpoint + last saved state (about 6.8 GB).
   # 2 == Leave last 2 saved checkpoints + last saved states (about 2 *~ 6.8 GB =~ 13.6 GB).
-  number_of_checkpoints_to_save: 15
+  number_of_checkpoints_to_save: 2
   # Variable: number_of_states_to_save
   # Description: Define how many states should be saved on disk (1 state =~ 3.4 GB)
   # if disable_state_saving is set as true this option will be inactive
@@ -165,4 +165,4 @@ upgrades:
   # For Colab use 1 or 2 for gDrive and 5 for instance drive
   # 1 == Leave last saved state (about 3.4 GB).
   # 2 == Leave last 2 saved states (about 2 *~ 3.4 GB =~ 6.8 GB).
-  number_of_states_to_save: 15
+  number_of_states_to_save: 2
