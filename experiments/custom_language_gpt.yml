@@ -165,4 +165,4 @@ upgrades:
   # For Colab use 1 or 2 for gDrive and 5 for instance drive
   # 1 == Leave last saved state (about 3.4 GB).
   # 2 == Leave last 2 saved states (about 2 *~ 3.4 GB =~ 6.8 GB).
-  number_of_states_to_save:10
+  number_of_states_to_save: 10
